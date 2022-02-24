@@ -29,6 +29,7 @@ const getGoods = () => {
             localStorage.removeItem(keys[i]);
         }
         localStorage.removeItem('keys');
+        keys = [];
     }
 
     // in case there are no keys
@@ -37,7 +38,7 @@ const getGoods = () => {
     }
 
     // comment this function if you don't want to clean the db on refresh
-    // removeAllFromLocalStorage();
+    removeAllFromLocalStorage();
 
     // 
     links.forEach((link) => {
