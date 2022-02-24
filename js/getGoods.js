@@ -36,8 +36,8 @@ const getGoods = () => {
         keys = [];
     }
 
-    // uncomment this function to clean all stored DBs
-    removeAllFromLocalStorage();
+    // comment this function if you don't want to clean the db on refresh
+    // removeAllFromLocalStorage();
 
     // 
     links.forEach((link) => {
