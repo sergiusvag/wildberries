@@ -48,7 +48,6 @@ const getGoods = () => {
 
                 localStorage.setItem('goods', JSON.stringify(array));
 
-                console.log(window.location);
                 if (window.location.pathname != "/goods.html") {
                     window.location.href = '/goods.html'
                 } else {
