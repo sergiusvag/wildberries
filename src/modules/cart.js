@@ -143,6 +143,7 @@ export const cart = function () {
             cartInnerModal.style.transform = 'translateX(0)';
             isOut = false;
         } else {
+            //If called from checkout button, clear cart only on animation end
             if (isCheckOut) {
                 isCheckOut = false
                 cartTable.innerHTML = ''
